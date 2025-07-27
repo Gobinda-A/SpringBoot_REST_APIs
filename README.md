@@ -1,3 +1,12 @@
+# 📘 Project Repository: Spring Boot REST APIs
+
+This repository contains two Spring Boot RESTful APIs:
+
+- [📚 BookAPI](#-bookapi)
+- [👨‍💼 EmployeeAPI](#-employeeapi)
+
+---
+
 # 📚 BookAPI
 
 BookAPI is a simple RESTful web service developed using **Spring Boot**. It provides basic CRUD operations to manage a collection of books.
@@ -61,3 +70,89 @@ Below are the Postman screenshots demonstrating each feature of the API:
    ```bash
    git clone https://github.com/your-username/BookAPI.git
    cd BookAPI
+
+---
+# 👨‍💼 EmployeeAPI
+
+EmployeeAPI is a RESTful service developed using **Spring Boot** to manage employee data. It performs full CRUD operations and includes an additional feature to **retrieve sorted employee records by first name**. Unlike the BookAPI, it connects to an **actual PostgreSQL database** for data persistence.
+
+---
+
+## ✅ Features
+
+- Add a new employee  
+- Retrieve employee by ID  
+- Retrieve all employees  
+- Update existing employee information  
+- Delete an employee by ID  
+- Retrieve employees sorted by first name  
+
+---
+
+## 🔧 Technologies Used
+
+- Java  
+- Spring Boot  
+- Spring Web  
+- Spring Data JPA  
+- PostgreSQL Driver  
+- Maven  
+
+---
+
+## 🗃️ Database
+
+The EmployeeAPI connects to a **PostgreSQL database** for storing and retrieving employee data using Spring Data JPA.
+
+---
+
+## 📡 HTTP Methods
+
+| Method | Endpoint                | Description                           |
+|--------|-------------------------|---------------------------------------|
+| GET    | `/api/emp`              | Get all employees                     |
+| GET    | `/api/emp/{id}`         | Get employee by ID                    |
+| POST   | `/api/emp`              | Add a new employee                    |
+| PUT    | `/api/emp/{id}`         | Update existing employee              |
+| DELETE | `/api/emp/{id}`         | Delete employee by ID                 |
+| GET    | `/api/emp/sorted`       | Get employees sorted by first name    |
+
+---
+
+## 📸 Postman Snapshots
+
+Below are the screenshots demonstrating each feature of the API:
+
+- **POST /api/emp** – Add a new employee  
+  <img width="1385" height="608" alt="image" src="https://github.com/user-attachments/assets/47bb4f31-9d45-4a40-8d04-3844a6061a84" />
+
+
+- **GET /api/emp** – Retrieve all employees  
+ <img width="1386" height="847" alt="image" src="https://github.com/user-attachments/assets/ffd6a81c-c266-4b44-97f8-bd58e88300ca" />
+
+
+- **GET /api/emp/{id}** – Retrieve employee by ID  
+ <img width="1369" height="456" alt="image" src="https://github.com/user-attachments/assets/74c6cfea-9796-4128-8969-4163308a933b" />
+
+
+- **PUT /api/emp/{id}** – Update employee details  
+  <img width="1350" height="556" alt="image" src="https://github.com/user-attachments/assets/d1dd4dec-3ed3-4c77-98bc-6a79a2a75e78" />
+
+
+- **DELETE /api/emp/{id}** – Delete an employee  
+  <img width="1371" height="392" alt="image" src="https://github.com/user-attachments/assets/23eb3d78-6709-4b81-a487-6167a3261875" />
+
+
+- **GET /api/emp/sorted** – Get sorted list of employees  
+  <img width="1389" height="861" alt="image" src="https://github.com/user-attachments/assets/cc1f8983-4728-4462-ac30-8d25e2c110b5" />
+
+
+---
+
+## 🛠 Setup & Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/EmployeeAPI.git
+   cd EmployeeAPI
+
